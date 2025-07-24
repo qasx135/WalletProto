@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package walletOperations;
 
-option go_package = "wallet.operations.v1;walletoperations";
+option go_package = "github.com/qasx135/WalletProto;walletoperations";
 
 service Wallet {
   rpc Create (CreateRequest) returns (CreateResponse);

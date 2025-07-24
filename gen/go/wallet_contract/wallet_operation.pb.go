@@ -341,7 +341,7 @@ const file_wallet_contract_wallet_operation_proto_rawDesc = "" +
 	"\x06Wallet\x12K\n" +
 	"\x06Create\x12\x1f.walletOperations.CreateRequest\x1a .walletOperations.CreateResponse\x12T\n" +
 	"\tGetWallet\x12\".walletOperations.GetWalletRequest\x1a#.walletOperations.GetWalletResponse\x12]\n" +
-	"\fUpdateWallet\x12%.walletOperations.UpdateWalletRequest\x1a&.walletOperations.UpdateWalletResponseB'Z%wallet.operations.v1;walletoperationsb\x06proto3"
+	"\fUpdateWallet\x12%.walletOperations.UpdateWalletRequest\x1a&.walletOperations.UpdateWalletResponseB1Z/github.com/qasx135/WalletProto;walletoperationsb\x06proto3"
 
 var (
 	file_wallet_contract_wallet_operation_proto_rawDescOnce sync.Once
