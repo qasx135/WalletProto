@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package walletOperations;
+
+option go_package = "wallet.operations.v1;walletoperations";
+
+service Wallet {
+  rpc Create (CreateRequest) returns (CreateResponse);
+  rpc GetWallet (GetWalletRequest) returns (GetWalletResponse);
+  rpc UpdateWallet (UpdateWalletRequest) returns (UpdateWalletResponse);
+}
+
+message CreateRequest {
+  string UUID = 1;
+  int64 amount = 2;
+}
+message CreateResponse {
+  bool isCreated = 1;
+}
+message GetWalletRequest {
+  string UUID = 1;
+}
+
+message GetWalletResponse {
+  string UUID = 1;
+  int64 amount = 2;
+}
+
+message UpdateWalletRequest {
+  string UUID = 1;
+  string operation = 2;
+  int64 amount = 3;
+}
+
+message UpdateWalletResponse {
+  bool isUpdated = 1;
+}
